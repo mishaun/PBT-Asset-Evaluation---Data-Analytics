@@ -6,9 +6,10 @@
 
 <h3 style='text-align:center'> Tableau Final Demo <br>Historical Asset Price vs Field Revenue | Oil & Gas Production and Activity</h3>
 
+
+
+
 ![dynamic_demo](Images/dynamic_demo_gif.gif)
-
-
 
 <hr>
 
