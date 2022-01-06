@@ -24,15 +24,21 @@
     * Downloaded historical production, wells, and permit data within Blackbeard's operation (extent of PBT properties)
 ![map_area](Images/data_extent_map.png)
 
-2. Yfinance - Fetch PBT historical asset/share price with pandas API 
-3. EIA Web Site - Downloaded historical oil & gas prices by month & year
+2. Yfinance - Fetch PBT historical asset/share price with Pandas API 
+3. EIA Web Site - Web scraped historical oil & gas prices by month & year with Pandas
 
 ### Transformations
 1. Column renaming for clarity on data fields
 2. Joined historical oil and gas prices with historical field production on date field (month-yr format)
 3. Created total revenue table using associated oil & gas price and monthly production for given month and year
 4. Applied normalized scaling to all fields for share price correlation analysis
-5. Created custom grouping of "Well Status" field in Permits data table to group alike values
+5. Unpivoted table from EIA website
+* Screenshot of Transformation
+
+![unpivot_trans](Images/unpivot_trans.png)
+
+
+6. Created custom grouping of "Well Status" field in Permits data table to group alike values
 
 * Code Snippet of grouping function
 ```python
